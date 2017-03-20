@@ -1,4 +1,6 @@
-for i in ./*.jpg ./*.jpeg
+sudo apt-get install imagemagick -y
+
+for i in ./*.jpg ./*.jpeg ./*.JPG
 do
     if [ ! -d "./watermarked" ]; then mkdir "./watermarked"; fi
     filename=$(basename "$i")
